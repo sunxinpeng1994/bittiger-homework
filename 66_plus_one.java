@@ -5,9 +5,11 @@ c class Solution {
             digits[0] = 1;
             return digits;
         }
-        
+
         int len = digits.length;
         boolean flag = false;
+        //  plus 题目的核心是 int carry = 0 也就是进位处理
+        // 这里最好使用carry
         //core logic
         digits[len - 1] += 1;
         for(int i = len-1; i>=0; i--){
@@ -30,7 +32,7 @@ c class Solution {
             return ans;
         }
         return digits;
-            
-        
+
+
     }
 }

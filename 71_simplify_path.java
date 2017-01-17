@@ -5,6 +5,7 @@ public class Solution {
             return "/";
         }
         //core logic
+        // can we do it with one stack and one set ?
         String[] strOne = path.trim().split("/+");
         Stack<String> temp = new Stack<String>();
         Stack<String> res = new Stack<String>();

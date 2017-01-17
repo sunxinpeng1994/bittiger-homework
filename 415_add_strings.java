@@ -13,7 +13,8 @@ c class Solution {
         StringBuilder ans = new StringBuilder();
         int i = num1c.length - 1;
         int j = num2c.length - 1;
-        int flag = 0;
+        int flag = 0; // int carry = 0;
+        // 3个while循环的if else 中有重复代码 
         while(i >= 0 && j >= 0){
             int temp = 0;
             temp = num1c[i] - '0' + num2c[j] - '0' + flag;
@@ -50,7 +51,7 @@ c class Solution {
                 flag = 0;
             }
             i--;
-            
+
         }
         while(j >= 0 && i < 0){
              int temp = 0;
@@ -74,10 +75,9 @@ c class Solution {
             ans.append('1');
         }
         return ans.reverse().toString();
-        
-        
-        
-        
+
+
+
+
     }
 }
-

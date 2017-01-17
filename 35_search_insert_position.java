@@ -16,3 +16,4 @@ public class Solution {
         return cur;
     }
 }
+// use binary search please

@@ -7,11 +7,11 @@ c class Solution {
         if(b == null && b.length() == 0){
             return a;
         }
-   
+
         //core logic
         int i = a.length() - 1;
         int j = b.length() - 1;
-        int flag = 0;
+        int flag = 0; // int carry = 0;
         StringBuilder ans = new StringBuilder();
         while(i >= 0 && j >= 0){
             int temp = (int)(a.charAt(i) - '0' + b.charAt(j) - '0') + flag;
@@ -41,4 +41,3 @@ c class Solution {
         return ans.reverse().toString();
     }
 }
-

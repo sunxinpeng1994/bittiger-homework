@@ -8,6 +8,8 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
+
+ // nice solution. please also try with two stacks without Collections.reverse
 public class Solution {
     public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<Integer>();
